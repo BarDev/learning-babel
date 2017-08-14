@@ -7,7 +7,7 @@ module.exports = {
         extensions: ['.js']
     },
     entry: {
-        polyfill: "babel-polyfill", //node_modules/babel-polyfill/polyfill.js
+        //polyfill: "babel-polyfill", //node_modules/babel-polyfill/polyfill.js
         bundle: path.resolve(__dirname, 'src/index.js') // Defining path seems necessary for this to work consistently on Windows machines.
     },
     output: {
@@ -20,10 +20,7 @@ module.exports = {
             {
                 test: /\.js$/, 
                 exclude: /node_modules/, 
-                loader: "babel-loader",
-                query: {
-                    presets: []
-                }
+                loader: "babel-loader"
             },
         ]
     },
