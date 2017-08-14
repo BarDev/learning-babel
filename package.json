@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "scripts": {
         "server": "browser-sync start  -c bs-config.js",
+        "babel": "babel  src/index.js --out-dir dist",
         "build": "webpack"
     },
     "author": "Mike Barlow - BarDev",
