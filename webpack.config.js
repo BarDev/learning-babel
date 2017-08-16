@@ -27,8 +27,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({     // Create HTML file that includes references to bundled CSS and JS.
             template: 'src/index.html',
-            filename: "index.html",
-            inject: "head"
+            filename: "index.html"
         }),
     ],
 };
