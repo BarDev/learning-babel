@@ -13,7 +13,7 @@ module.exports = {
     },
     plugins: [
         // Copies HTML file from src to dist. 
-        // Also adds a refernece to bundle.js file that is created.
+        // Also adds a refernece to bundle.js.
         new HtmlWebpackPlugin({     
             template: 'src/index.html',
             filename: "index.html"
